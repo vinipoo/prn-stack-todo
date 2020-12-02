@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "* PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend that is deployed to Heroku. Tutorial code by The Stoic Programmers (see 'Inspiration' below)",
+  "main": "index.js",
+  "engines": {
+    "node": "12.4.0",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.3.0"
+  },
+  "devDependencies": {}
+}
